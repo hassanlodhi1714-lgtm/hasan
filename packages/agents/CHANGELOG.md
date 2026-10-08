@@ -1,5 +1,17 @@
 # @cloudflare/agents
 
+## 0.28.0
+
+### Minor Changes
+
+- [#2484](https://github.com/cloudflare/agents/pull/2484) [`dedbee4`](https://github.com/cloudflare/agents/commit/dedbee41bad3986ffc45fe295502e9740bde31ca) Thanks [@ben-reitz](https://github.com/ben-reitz)! - Add `browserTool()` to `agents/browser/pi`. See [Persistent browser](https://github.com/cloudflare/agents/blob/main/docs/agents/browse-the-web.md#persistent-browser).
+
+### Patch Changes
+
+- [#2532](https://github.com/cloudflare/agents/pull/2532) [`63ea7d3`](https://github.com/cloudflare/agents/commit/63ea7d3c3112b6038dee8082e56b58ab45d80a1c) Thanks [@ben-reitz](https://github.com/ben-reitz)! - Give each `browserTool` scope its own active tab, so conversations sharing one `Browser` don't drive each other's tab. See [Persistent browser](https://github.com/cloudflare/agents/blob/main/docs/agents/browse-the-web.md#persistent-browser).
+
+- [#2522](https://github.com/cloudflare/agents/pull/2522) [`bcf5d20`](https://github.com/cloudflare/agents/commit/bcf5d2057aa477da9f464af8496a21811416a7c4) Thanks [@ben-reitz](https://github.com/ben-reitz)! - Add `agents/webfetch`, a `web_fetch` tool that reads a URL as Markdown, JSON, or text (HTML, PDF, and Office documents are converted with Workers AI) under a host-controlled URL policy and size limits, for the pi harness, the AI SDK, and TanStack AI. See [Fetch the Web](https://github.com/cloudflare/agents/blob/main/docs/agents/fetch-the-web.md).
+
 ## 0.27.0
 
 This release adds four new experimental harnesses and a `web_search` tool, and reorganizes the experimental Channels API.
